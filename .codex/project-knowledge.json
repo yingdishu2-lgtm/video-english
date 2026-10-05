@@ -1,0 +1,31 @@
+{
+  "projectKnowledge": {
+    "adapter": {
+      "id": "default",
+      "version": "1.5.2"
+    },
+    "compatibility": {
+      "core": ">=1.0.0,<2.0.0",
+      "queryReceiptSchema": 1,
+      "receiptSchema": 1
+    },
+    "enabled": true,
+    "policyRef": {
+      "path": ".codex/project-knowledge-policy.md",
+      "sha256": "0137e41240b87c1b8c04ab283d77a2fa84369a2618b9401324ec146e977d2dce",
+      "version": "1"
+    },
+    "verifiers": [
+      "file",
+      "config",
+      "commit"
+    ],
+    "wiki": {
+      "conflicts": "99-conflicts",
+      "current": "current",
+      "root": "docs/project-wiki",
+      "staging": "99-inbox"
+    }
+  },
+  "schemaVersion": 1
+}

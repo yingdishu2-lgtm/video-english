@@ -1,0 +1,11 @@
+.DS_Store
+.env
+data/*
+!data/.gitkeep
+media/*
+!media/.gitkeep
+frontend/node_modules/
+frontend/dist/
+backend/server
+coverage.out
+
