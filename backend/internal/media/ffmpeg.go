@@ -6,6 +6,7 @@ import (
 	"os/exec"
 	"strconv"
 	"strings"
+	"time"
 )
 
 type RemuxRequest struct {
@@ -21,6 +22,18 @@ type Remuxer interface {
 
 type SubtitleExtractor interface {
 	ExtractSubtitle(ctx context.Context, input string, streamIndex int, output string) error
+}
+
+type FrameRequest struct {
+	Input  string
+	Output string
+	Seek   time.Duration
+	Width  int
+	Height int
+}
+
+type FrameExtractor interface {
+	ExtractFrame(ctx context.Context, request FrameRequest) error
 }
 
 type FFmpeg struct {
@@ -70,6 +83,33 @@ func (f FFmpeg) ExtractSubtitle(ctx context.Context, input string, streamIndex i
 			message = err.Error()
 		}
 		return fmt.Errorf("ffmpeg subtitle extraction failed: %s", message)
+	}
+	return nil
+}
+
+func (f FFmpeg) ExtractFrame(ctx context.Context, request FrameRequest) error {
+	filter := fmt.Sprintf(
+		"scale=%d:%d:force_original_aspect_ratio=decrease,pad=%d:%d:(ow-iw)/2:(oh-ih)/2",
+		request.Width, request.Height, request.Width, request.Height,
+	)
+	args := []string{
+		"-hide_banner", "-loglevel", "error", "-y",
+		"-ss", strconv.FormatFloat(request.Seek.Seconds(), 'f', 3, 64),
+		"-i", request.Input,
+		"-map", "0:v:0",
+		"-frames:v", "1",
+		"-vf", filter,
+		"-q:v", "3",
+		request.Output,
+	}
+	cmd := exec.CommandContext(ctx, f.Path, args...)
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		message := strings.TrimSpace(string(output))
+		if message == "" {
+			message = err.Error()
+		}
+		return fmt.Errorf("ffmpeg frame extraction failed: %s", message)
 	}
 	return nil
 }

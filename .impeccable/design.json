@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15T05:52:03Z",
+  "title": "Design System: English Media Learner",
+  "extensions": {
+    "colorMeta": {
+      "canvas": { "role": "neutral", "displayName": "午夜画布", "canonical": "#0b1019", "tonalRamp": ["oklch(15% 0.018 255)", "oklch(25% 0.018 255)", "oklch(35% 0.018 255)", "oklch(48% 0.018 255)", "oklch(60% 0.018 255)", "oklch(72% 0.018 255)", "oklch(84% 0.018 255)", "oklch(95% 0.018 255)"] },
+      "surface": { "role": "neutral", "displayName": "石板面板", "canonical": "#141c29", "tonalRamp": ["oklch(15% 0.024 255)", "oklch(25% 0.024 255)", "oklch(35% 0.024 255)", "oklch(48% 0.024 255)", "oklch(60% 0.024 255)", "oklch(72% 0.024 255)", "oklch(84% 0.024 255)", "oklch(95% 0.024 255)"] },
+      "surface-raised": { "role": "neutral", "displayName": "抬升石板", "canonical": "#1b2535", "tonalRamp": ["oklch(15% 0.032 255)", "oklch(25% 0.032 255)", "oklch(35% 0.032 255)", "oklch(48% 0.032 255)", "oklch(60% 0.032 255)", "oklch(72% 0.032 255)", "oklch(84% 0.032 255)", "oklch(95% 0.032 255)"] },
+      "divider": { "role": "neutral", "displayName": "克制分隔线", "canonical": "#2a3445", "tonalRamp": ["oklch(15% 0.026 255)", "oklch(25% 0.026 255)", "oklch(35% 0.026 255)", "oklch(48% 0.026 255)", "oklch(60% 0.026 255)", "oklch(72% 0.026 255)", "oklch(84% 0.026 255)", "oklch(95% 0.026 255)"] },
+      "text-primary": { "role": "neutral", "displayName": "冷白正文", "canonical": "#f1f4fa", "tonalRamp": ["oklch(15% 0.012 255)", "oklch(25% 0.012 255)", "oklch(35% 0.012 255)", "oklch(48% 0.012 255)", "oklch(60% 0.012 255)", "oklch(72% 0.012 255)", "oklch(84% 0.012 255)", "oklch(95% 0.012 255)"] },
+      "text-muted": { "role": "neutral", "displayName": "灰蓝次文", "canonical": "#a3afc2", "tonalRamp": ["oklch(15% 0.026 255)", "oklch(25% 0.026 255)", "oklch(35% 0.026 255)", "oklch(48% 0.026 255)", "oklch(60% 0.026 255)", "oklch(72% 0.026 255)", "oklch(84% 0.026 255)", "oklch(95% 0.026 255)"] },
+      "accent": { "role": "primary", "displayName": "冷蓝强调", "canonical": "#7393ff", "tonalRamp": ["oklch(15% 0.18 264)", "oklch(25% 0.18 264)", "oklch(35% 0.18 264)", "oklch(48% 0.18 264)", "oklch(60% 0.18 264)", "oklch(72% 0.18 264)", "oklch(84% 0.18 264)", "oklch(95% 0.18 264)"] },
+      "action": { "role": "primary", "displayName": "实蓝行动", "canonical": "#3d63e4", "tonalRamp": ["oklch(15% 0.19 264)", "oklch(25% 0.19 264)", "oklch(35% 0.19 264)", "oklch(48% 0.19 264)", "oklch(60% 0.19 264)", "oklch(72% 0.19 264)", "oklch(84% 0.19 264)", "oklch(95% 0.19 264)"] },
+      "action-hover": { "role": "primary", "displayName": "行动悬停蓝", "canonical": "#4265d6", "tonalRamp": ["oklch(15% 0.17 264)", "oklch(25% 0.17 264)", "oklch(35% 0.17 264)", "oklch(48% 0.17 264)", "oklch(60% 0.17 264)", "oklch(72% 0.17 264)", "oklch(84% 0.17 264)", "oklch(95% 0.17 264)"] },
+      "selection": { "role": "primary", "displayName": "文本选中蓝", "canonical": "#3857a0", "tonalRamp": ["oklch(15% 0.11 264)", "oklch(25% 0.11 264)", "oklch(35% 0.11 264)", "oklch(48% 0.11 264)", "oklch(60% 0.11 264)", "oklch(72% 0.11 264)", "oklch(84% 0.11 264)", "oklch(95% 0.11 264)"] },
+      "success-surface": { "role": "secondary", "displayName": "成功深绿", "canonical": "#163529", "tonalRamp": ["oklch(15% 0.07 160)", "oklch(25% 0.07 160)", "oklch(35% 0.07 160)", "oklch(48% 0.07 160)", "oklch(60% 0.07 160)", "oklch(72% 0.07 160)", "oklch(84% 0.07 160)", "oklch(95% 0.07 160)"] },
+      "success-text": { "role": "secondary", "displayName": "成功浅绿", "canonical": "#d8f7e7", "tonalRamp": ["oklch(15% 0.07 160)", "oklch(25% 0.07 160)", "oklch(35% 0.07 160)", "oklch(48% 0.07 160)", "oklch(60% 0.07 160)", "oklch(72% 0.07 160)", "oklch(84% 0.07 160)", "oklch(95% 0.07 160)"] },
+      "error-surface": { "role": "tertiary", "displayName": "错误红褐", "canonical": "#482324", "tonalRamp": ["oklch(15% 0.08 25)", "oklch(25% 0.08 25)", "oklch(35% 0.08 25)", "oklch(48% 0.08 25)", "oklch(60% 0.08 25)", "oklch(72% 0.08 25)", "oklch(84% 0.08 25)", "oklch(95% 0.08 25)"] },
+      "error-text": { "role": "tertiary", "displayName": "错误浅红", "canonical": "#ffdeda", "tonalRamp": ["oklch(15% 0.08 25)", "oklch(25% 0.08 25)", "oklch(35% 0.08 25)", "oklch(48% 0.08 25)", "oklch(60% 0.08 25)", "oklch(72% 0.08 25)", "oklch(84% 0.08 25)", "oklch(95% 0.08 25)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "影片展示标题", "purpose": "媒体库特选影片标题。" },
+      "headline": { "displayName": "页面标题", "purpose": "媒体库一级标题。" },
+      "title": { "displayName": "区块标题", "purpose": "字幕时间轴与同级面板标题。" },
+      "body": { "displayName": "字幕正文", "purpose": "双语台词、语境与状态正文。" },
+      "label": { "displayName": "控制标签", "purpose": "按钮、导航和紧凑控制。" },
+      "phonetic": { "displayName": "IPA 音标", "purpose": "仅用于发音面板中的书面音标。" }
+    },
+    "shadows": [
+      { "name": "card-low", "value": "0 10px 24px rgba(0, 0, 0, .2)", "purpose": "媒体缩略图的轻量环境阴影。" },
+      { "name": "featured-medium", "value": "0 24px 60px rgba(0, 0, 0, .3)", "purpose": "媒体库特选画面。" },
+      { "name": "popover-high", "value": "0 16px 36px rgba(0,0,0,.4)", "purpose": "字幕轨道设置浮层。" },
+      { "name": "dictionary-high", "value": "0 18px 60px rgba(0,0,0,.6)", "purpose": "非模态发音面板。" },
+      { "name": "input-focus", "value": "0 0 0 3px rgba(115, 147, 255, .2)", "purpose": "媒体库搜索框的焦点状态。" }
+    ],
+    "motion": [
+      { "name": "media-artwork", "value": "420ms cubic-bezier(.2, .75, .25, 1)", "purpose": "精细指针设备上媒体缩略图的缩放与变暗。" },
+      { "name": "play-reveal", "value": "opacity 180ms ease-out, transform 260ms cubic-bezier(.2, .75, .25, 1)", "purpose": "媒体卡片播放入口的显现。" },
+      { "name": "details-chevron", "value": "transform 160ms ease-out", "purpose": "媒体详情展开箭头。" },
+      { "name": "loading-spin", "value": ".8s linear infinite", "purpose": "媒体库加载指示器；减少动态时延长为 1.8s。" },
+      { "name": "reduced-motion", "value": ".01ms", "purpose": "全局减少动态偏好下的动画与过渡时长。" }
+    ],
+    "breakpoints": [
+      { "name": "compact-height", "value": "max-height: 650px and orientation: portrait" },
+      { "name": "library-mobile", "value": "640px" },
+      { "name": "small-tablet-grid", "value": "480px–720px" },
+      { "name": "player-landscape", "value": "min-width: 640px and orientation: landscape" },
+      { "name": "player-wide", "value": "960px" },
+      { "name": "library-two-column", "value": "980px" },
+      { "name": "desktop-sidebar", "value": "1100px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "播放等唯一主要行动使用的实蓝按钮。",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 5 10 7-10 7V5Z\"/></svg>开始播放</button>",
+      "css": ".ds-btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:44px; padding:10px 18px; color:#fff; background:var(--action, #3d63e4); border:1px solid transparent; border-radius:10px; font:600 14px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; cursor:pointer; } .ds-btn-primary:hover { background:#4265d6; } .ds-btn-primary:focus-visible { outline:2px solid var(--accent, #7393ff); outline-offset:3px; } .ds-btn-primary:active { transform:translateY(1px); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "扫描、重试和清除等次级行动。",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 7v5h-5M4 17v-5h5\"/><path d=\"M6 7a7 7 0 0 1 11.7-1.7L20 8M4 16l2.3 2.7A7 7 0 0 0 18 17\"/></svg>扫描媒体目录</button>",
+      "css": ".ds-btn-secondary { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:44px; padding:10px 18px; color:#dce5f5; background:#1b283d; border:1px solid #384a65; border-radius:10px; font:600 14px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; cursor:pointer; } .ds-btn-secondary:hover { background:#293d5a; } .ds-btn-secondary:focus-visible { outline:2px solid var(--accent, #7393ff); outline-offset:3px; } .ds-btn-secondary:active { background:#243859; }"
+    },
+    {
+      "name": "Library Search",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "搜索影片、文件或编码的媒体库输入框。",
+      "html": "<label class=\"ds-search\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"/><path d=\"m16 16 5 5\"/></svg><input type=\"search\" placeholder=\"搜索影片、文件或编码\" /></label>",
+      "css": ".ds-search { display:flex; width:min(440px, 100%); min-height:46px; align-items:center; padding:0 12px; color:var(--text-muted, #a3afc2); background:var(--surface, #141c29); border:1px solid var(--divider, #2a3445); border-radius:12px; } .ds-search:focus-within { border-color:var(--accent, #7393ff); box-shadow:0 0 0 3px rgba(115,147,255,.2); } .ds-search input { width:100%; min-width:0; height:44px; padding:0 10px; color:var(--text-primary, #f1f4fa); background:transparent; border:0; outline:0; font:400 15px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; caret-color:var(--accent, #7393ff); } .ds-search input::placeholder { color:#8490a3; }"
+    },
+    {
+      "name": "Active Navigation",
+      "kind": "nav",
+      "description": "当前媒体库入口的导航状态。",
+      "html": "<nav class=\"ds-nav\" aria-label=\"主导航\"><a class=\"ds-nav-item\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"18\" rx=\"2\"/><path d=\"M14 4h5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-5V4Z\"/></svg><span>媒体库</span></a></nav>",
+      "css": ".ds-nav { display:grid; gap:6px; } .ds-nav-item { display:flex; align-items:center; gap:10px; min-height:44px; padding:10px 12px; color:#c8d8ff; background:#1e304f; border-radius:10px; font:600 14px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; text-decoration:none; } .ds-nav-item:hover { background:#243a61; } .ds-nav-item:focus-visible { outline:2px solid var(--accent, #7393ff); outline-offset:3px; } .ds-nav-item:active { background:#20365b; }"
+    },
+    {
+      "name": "Media Card Fallback",
+      "kind": "card",
+      "refersTo": "media-card",
+      "description": "动态影片画面不可用时仍保留真实标题和媒体事实的卡片。",
+      "html": "<article class=\"ds-media-card\"><a class=\"ds-media-artwork\" href=\"#\" aria-label=\"播放影片\"><span class=\"ds-media-fallback\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"3\"/><path d=\"m10 9 5 3-5 3V9Z\"/></svg>暂无画面</span><span class=\"ds-media-duration\">42:18</span></a><div class=\"ds-media-copy\"><h3>影片标题</h3><p>1920×1080 · 1 条音轨 · 2 条字幕</p></div></article>",
+      "css": ".ds-media-card { width:100%; min-width:0; color:var(--text-primary, #f1f4fa); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; } .ds-media-artwork { position:relative; display:block; aspect-ratio:16/9; overflow:hidden; color:#7e8ba0; background:#111927; border-radius:12px; box-shadow:0 10px 24px rgba(0,0,0,.2); text-decoration:none; } .ds-media-fallback { display:flex; width:100%; height:100%; align-items:center; justify-content:center; flex-direction:column; gap:10px; font-size:13px; font-weight:650; } .ds-media-duration { position:absolute; right:8px; bottom:8px; padding:4px 7px; color:#f5f7fb; background:rgba(5,9,15,.82); border-radius:6px; font:700 11px/1.2 inherit; } .ds-media-copy { padding:13px 2px 0; } .ds-media-copy h3 { margin:0; font-size:16px; line-height:1.35; } .ds-media-copy p { margin:7px 0 0; color:var(--text-muted, #a3afc2); font-size:12px; } .ds-media-artwork:hover { filter:brightness(.86); } .ds-media-artwork:focus-visible { outline:2px solid var(--accent, #7393ff); outline-offset:3px; } .ds-media-artwork:active { filter:brightness(.72); }"
+    },
+    {
+      "name": "Active Subtitle Row",
+      "kind": "custom",
+      "refersTo": "subtitle-active",
+      "description": "当前双语字幕及其独立时间跳转、点词入口。",
+      "html": "<div class=\"ds-subtitle-row\" aria-current=\"true\"><button class=\"ds-cue-seek\" type=\"button\">02:14</button><span class=\"ds-cue-copy\"><span class=\"ds-cue-en\">Keep <button class=\"ds-word-token\" type=\"button\">going</button>.</span><button class=\"ds-cue-zh\" type=\"button\">继续前进。</button></span></div>",
+      "css": ".ds-subtitle-row { display:grid; grid-template-columns:48px minmax(0,1fr); gap:8px; width:100%; padding:10px 7px; color:#f4f7ff; background:#20365b; border:1px solid #3d5b8b; border-radius:10px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; } .ds-cue-seek { align-self:start; min-width:44px; min-height:44px; padding:0; color:#a9bfdc; background:transparent; border:0; border-radius:4px; font:400 12px/1.5 inherit; cursor:pointer; } .ds-cue-copy { min-width:0; } .ds-cue-en { font-size:16px; line-height:1.65; } .ds-word-token { display:inline-block; min-width:0; min-height:44px; padding:0 2px; color:inherit; background:none; border:0; border-radius:3px; font:inherit; line-height:44px; cursor:pointer; } .ds-cue-zh { display:block; width:100%; min-height:44px; margin-top:4px; padding:0; color:#b0c2dd; background:none; border:0; border-radius:4px; font:400 16px/1.6 inherit; text-align:left; cursor:pointer; } .ds-word-token:hover,.ds-cue-seek:hover,.ds-cue-zh:hover { color:#fff; background:#36537d; } .ds-word-token:focus-visible,.ds-cue-seek:focus-visible,.ds-cue-zh:focus-visible { outline:2px solid var(--accent, #7393ff); outline-offset:3px; } .ds-word-token:active,.ds-cue-seek:active,.ds-cue-zh:active { color:#fff; background:#385781; }"
+    },
+    {
+      "name": "Track Select",
+      "kind": "input",
+      "description": "字幕轨道选择器，保留原生 select 行为。",
+      "html": "<label class=\"ds-track-select\">英文轨<select><option>ENG · English</option></select></label>",
+      "css": ".ds-track-select { display:grid; min-width:0; gap:6px; color:#bdcce2; font:400 13px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; } .ds-track-select select { width:100%; min-width:0; min-height:44px; padding:8px 24px 8px 8px; color:var(--text-primary, #f1f4fa); background:#101927; border:1px solid #546d90; border-radius:8px; font:400 16px/1.5 inherit; } .ds-track-select select:hover { border-color:var(--accent, #7393ff); } .ds-track-select select:focus-visible { outline:2px solid var(--accent, #7393ff); outline-offset:3px; } .ds-track-select select:active { background:#1b2a40; }"
+    },
+    {
+      "name": "Pronunciation Panel",
+      "kind": "custom",
+      "description": "点词后出现的非模态 IPA 与双语语境面板。",
+      "html": "<section class=\"ds-dictionary\" role=\"dialog\" aria-modal=\"false\" aria-labelledby=\"ds-word\"><button class=\"ds-dictionary-close\" type=\"button\" aria-label=\"关闭发音面板\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 6 12 12M18 6 6 18\"/></svg></button><h3 id=\"ds-word\">context</h3><p class=\"ds-phonetic\">/ˈkɒntekst/</p><div class=\"ds-word-context\"><span>Learn the word in context.</span><small>在语境中学习这个词。</small></div><small class=\"ds-dictionary-source\">音标来源：本地词典</small></section>",
+      "css": ".ds-dictionary { position:relative; width:min(440px, 100%); max-height:28rem; overflow:auto; padding:24px; color:var(--text-primary, #f1f4fa); background:#1b293e; border-radius:16px; box-shadow:0 18px 60px rgba(0,0,0,.6); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; } .ds-dictionary h3 { margin:0 44px 10px 0; font-size:30px; line-height:1.25; letter-spacing:-.025em; } .ds-dictionary-close { position:absolute; top:10px; right:10px; display:grid; place-items:center; width:44px; height:44px; padding:0; color:#e0eaff; background:#2c405f; border:0; border-radius:8px; cursor:pointer; } .ds-phonetic { margin:4px 0 16px; color:#c0d1ff; font:400 22px/1.25 'Times New Roman',serif; } .ds-word-context { display:grid; gap:4px; margin-top:10px; padding-top:16px; border-top:1px solid #3d506e; font-size:16px; line-height:1.65; } .ds-word-context small { color:#b0c2dd; font-size:inherit; } .ds-dictionary-source { display:block; margin-top:16px; color:#aabbda; font-size:12px; } .ds-dictionary-close:hover { background:#36537d; } .ds-dictionary-close:focus-visible { outline:2px solid var(--accent, #7393ff); outline-offset:3px; } .ds-dictionary-close:active { background:#385781; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "午夜媒体阅览室",
+    "overview": "界面像一间专注于个人片库的低光阅览室：午夜蓝画布与分层石板蓝面板退到背景，真实影片画面、播放入口和双语字幕承担视觉主角。参考 Infuse 的内容层级与完成度，但图标、布局和交互均由本项目实现，不复制其品牌资产或逐像素构图。\n\n这是一个面向操作的系统。媒体库先帮助用户认出和选择自己的影片；播放器把画面、原生播放控件、字幕时间轴和点词发音组织为连续任务。视觉语言保持克制、清晰和触控友好，状态颜色只表达真实状态。",
+    "keyCharacteristics": [
+      "午夜蓝画布、冷白正文、石板蓝分层面板与单一实蓝行动色。",
+      "真实本地媒体抽帧保持原色；不可用时显示明确的无图回退。",
+      "平台无衬线字体、紧凑信息密度和统一的线性 SVG 图标。",
+      "手机与平板优先，主要操作和触屏字幕目标保持至少 44px 高。",
+      "影片画面、字幕与当前学习语境优先于路径和技术元数据。"
+    ],
+    "rules": [
+      { "name": "The One Action Blue Rule", "body": "实蓝只标识主要操作；焦点、选中字幕和信息层级使用各自的蓝色表面，不把整屏染成强调色。", "section": "colors" },
+      { "name": "The Honest Image Rule", "body": "影片画面只来自用户本地媒体的运行时抽帧；封面不可用时使用明确回退，不虚构海报、评分或观看进度。", "section": "colors" },
+      { "name": "The Content Before Metadata Rule", "body": "影片标题、画面和台词保持最高可读层级；路径、编码和来源始终作为可截断或次要信息。", "section": "typography" },
+      { "name": "The Viewport-Bound Player Rule", "body": "播放器工作区必须留在当前动态视口内；视频和字幕各自管理尺寸与滚动，页面不依赖无限纵向增长完成核心任务。", "section": "layout" },
+      { "name": "The Tonal First Rule", "body": "默认表面依靠颜色和边界建立层级；只有真实浮层与主视觉图像获得阴影。", "section": "elevation" },
+      { "name": "The Radius by Scale Rule", "body": "圆角随组件体量递增，控制件不使用夸张胶囊形；圆形仅保留给播放和加载这类具明确语义的元素。", "section": "shapes" }
+    ],
+    "dos": [
+      "Do 让真实影片画面、片名、播放入口和双语字幕承担首要层级。",
+      "Do 为主要按钮、关闭、搜索清除、轨道选择、时间戳和触屏词按钮保留至少 44px 的可触达高度。",
+      "Do 在触屏上保持短词自然横向宽度，只扩大纵向命中区以维持正常词间距。",
+      "Do 使用统一的线性 SVG 图标、清晰焦点、真实加载/空/错误状态和 prefers-reduced-motion 回退。",
+      "Do 让手机、平板和横屏布局都尊重安全区与动态视口。"
+    ],
+    "donts": [
+      "Don't 虚构海报、评分、观看进度、学习数据或尚未实现的功能。",
+      "Don't 把路径、编码和技术标签提升到影片与字幕之上。",
+      "Don't 使用霓虹光晕、装饰性渐变文字、字符图标或系统外的展示字体建立视觉噪声。",
+      "Don't 强制短词获得 44px 横向宽度，或让自动字幕跟随覆盖用户正在手动浏览的位置。",
+      "Don't 把 Chromium 模拟结果写成实体设备或 iOS Safari 已验证的承诺。"
+    ]
+  }
+}

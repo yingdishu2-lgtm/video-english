@@ -28,9 +28,11 @@ func main() {
 	}
 	defer client.Close()
 
-	mediaService := media.NewService(client, cfg.MediaRoot, media.FFprobe{Path: cfg.FFprobePath})
-	playbackService := playback.NewService(mediaService, playback.WithRemux(filepath.Join(cfg.DataRoot, "cache"), media.FFmpeg{Path: cfg.FFmpegPath}))
-	subtitleService := subtitle.NewService(client, mediaService, filepath.Join(cfg.DataRoot, "cache"), media.FFmpeg{Path: cfg.FFmpegPath})
+	cacheRoot := filepath.Join(cfg.DataRoot, "cache")
+	ffmpeg := media.FFmpeg{Path: cfg.FFmpegPath}
+	mediaService := media.NewService(client, cfg.MediaRoot, media.FFprobe{Path: cfg.FFprobePath}, media.WithPoster(cacheRoot, ffmpeg))
+	playbackService := playback.NewService(mediaService, playback.WithRemux(cacheRoot, ffmpeg))
+	subtitleService := subtitle.NewService(client, mediaService, cacheRoot, ffmpeg)
 	dictionaryService := dictionary.NewService(client)
 	router := api.NewRouter(mediaService, playbackService, subtitleService, dictionaryService, cfg.FrontendDist)
 	log.Printf("English Media Learner API listening on http://localhost:%s (media: %s)", cfg.Port, cfg.MediaRoot)

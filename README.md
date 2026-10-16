@@ -9,6 +9,7 @@
 - 扫描 `MEDIA_ROOT` 下的 MP4、M4V、MOV、MKV、WebM。
 - 使用 `ffprobe` 保存容器、时长、分辨率及音频/视频/字幕轨信息。
 - 基于相对路径、文件大小和修改时间跳过未变化媒体。
+- 从真实本地视频生成并缓存封面，媒体变化后刷新；媒体库支持标题、文件与编码搜索。
 - MP4/M4V/MOV + H.264 + AAC/MP3 Direct Play。
 - MKV + H.264 按所选音轨无损 remux 为 MP4，并缓存到 `data/cache/media/{id}/`。
 - 播放接口支持 `audioStream` 参数；非 AAC/MP3 音轨会回退转码为 AAC。
@@ -78,6 +79,7 @@ make run
 | `POST` | `/api/v1/media/scan` | 扫描并探测媒体 |
 | `GET` | `/api/v1/media` | 媒体列表与轨道 |
 | `GET` | `/api/v1/media/:id` | 媒体详情 |
+| `GET` | `/api/v1/media/:id/poster` | 本地视频抽帧封面，支持缓存与 ETag |
 | `POST` | `/api/v1/media/:id/probe` | 重新运行 ffprobe |
 | `GET` | `/api/v1/media/:id/playback` | 获取直放信息 |
 | `GET` | `/api/v1/media/:id/stream` | Range 媒体流 |

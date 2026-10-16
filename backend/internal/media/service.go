@@ -9,6 +9,7 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"sync"
 	"time"
 
 	"git.gdys01.cn/gdys01/English-media-learner/backend/ent"
@@ -17,9 +18,21 @@ import (
 )
 
 type Service struct {
-	client    *ent.Client
-	mediaRoot string
-	prober    Prober
+	client          *ent.Client
+	mediaRoot       string
+	prober          Prober
+	posterCacheRoot string
+	frameExtractor  FrameExtractor
+	posterMu        sync.Mutex
+}
+
+type Option func(*Service)
+
+func WithPoster(cacheRoot string, extractor FrameExtractor) Option {
+	return func(service *Service) {
+		service.posterCacheRoot = cacheRoot
+		service.frameExtractor = extractor
+	}
 }
 
 type ScanResult struct{ Added, Updated, Unchanged, Failed int }
@@ -54,8 +67,12 @@ type StreamItem struct {
 	IsForced   bool   `json:"isForced"`
 }
 
-func NewService(client *ent.Client, mediaRoot string, prober Prober) *Service {
-	return &Service{client: client, mediaRoot: mediaRoot, prober: prober}
+func NewService(client *ent.Client, mediaRoot string, prober Prober, options ...Option) *Service {
+	service := &Service{client: client, mediaRoot: mediaRoot, prober: prober}
+	for _, option := range options {
+		option(service)
+	}
+	return service
 }
 
 func (s *Service) MediaRoot() string { return s.mediaRoot }

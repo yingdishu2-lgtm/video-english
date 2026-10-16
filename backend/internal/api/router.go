@@ -38,6 +38,7 @@ func NewRouter(mediaService *media.Service, playbackService *playback.Service, s
 	api.POST("/media/scan", handler.scan)
 	api.GET("/media", handler.list)
 	api.GET("/media/:id", handler.get)
+	api.GET("/media/:id/poster", handler.poster)
 	api.POST("/media/:id/probe", handler.reprobe)
 	api.GET("/media/:id/playback", handler.getPlayback)
 	api.GET("/media/:id/playback/:filename", handler.playbackFile)
@@ -176,6 +177,33 @@ func (h Handler) get(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, item)
+}
+
+func (h Handler) poster(c *gin.Context) {
+	id, ok := parseID(c)
+	if !ok {
+		return
+	}
+	poster, err := h.media.Poster(c.Request.Context(), id)
+	if err != nil {
+		switch {
+		case ent.IsNotFound(err), errors.Is(err, os.ErrNotExist):
+			respondError(c, http.StatusNotFound, fmt.Errorf("media not found"))
+		case errors.Is(err, media.ErrPosterUnavailable):
+			respondError(c, http.StatusUnprocessableEntity, fmt.Errorf("poster unavailable"))
+		default:
+			respondError(c, http.StatusInternalServerError, fmt.Errorf("poster generation failed"))
+		}
+		return
+	}
+	c.Header("Cache-Control", "private, max-age=86400")
+	c.Header("ETag", poster.ETag)
+	if c.GetHeader("If-None-Match") == poster.ETag {
+		c.Status(http.StatusNotModified)
+		return
+	}
+	c.Header("Content-Type", "image/jpeg")
+	c.File(poster.Path)
 }
 
 func (h Handler) reprobe(c *gin.Context) {

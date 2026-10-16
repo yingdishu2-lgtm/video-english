@@ -28,6 +28,13 @@ func (fakeProber) Probe(context.Context, string) (media.ProbeResult, error) {
 	}, nil
 }
 
+type fakeFrameExtractor struct{ calls int }
+
+func (e *fakeFrameExtractor) ExtractFrame(_ context.Context, request media.FrameRequest) error {
+	e.calls++
+	return os.WriteFile(request.Output, []byte("jpeg"), 0o644)
+}
+
 func TestScanPlaybackAndRangeStream(t *testing.T) {
 	gin.SetMode(gin.TestMode)
 	root := t.TempDir()
@@ -41,7 +48,8 @@ func TestScanPlaybackAndRangeStream(t *testing.T) {
 	}
 	defer client.Close()
 
-	mediaService := media.NewService(client, root, fakeProber{})
+	frameExtractor := &fakeFrameExtractor{}
+	mediaService := media.NewService(client, root, fakeProber{}, media.WithPoster(t.TempDir(), frameExtractor))
 	router := NewRouter(mediaService, playback.NewService(mediaService), nil, nil, "")
 
 	scan := httptest.NewRecorder()
@@ -75,6 +83,23 @@ func TestScanPlaybackAndRangeStream(t *testing.T) {
 	}
 	if value := stream.Header().Get("Content-Range"); value != "bytes 3-7/16" {
 		t.Fatalf("Content-Range = %q", value)
+	}
+
+	poster := httptest.NewRecorder()
+	router.ServeHTTP(poster, httptest.NewRequest(http.MethodGet, "/api/v1/media/1/poster", nil))
+	if poster.Code != http.StatusOK || poster.Body.String() != "jpeg" {
+		t.Fatalf("poster status = %d, body = %q", poster.Code, poster.Body.String())
+	}
+	if poster.Header().Get("Content-Type") != "image/jpeg" || poster.Header().Get("ETag") == "" {
+		t.Fatalf("poster headers = %#v", poster.Header())
+	}
+
+	notModifiedRequest := httptest.NewRequest(http.MethodGet, "/api/v1/media/1/poster", nil)
+	notModifiedRequest.Header.Set("If-None-Match", poster.Header().Get("ETag"))
+	notModified := httptest.NewRecorder()
+	router.ServeHTTP(notModified, notModifiedRequest)
+	if notModified.Code != http.StatusNotModified || frameExtractor.calls != 1 {
+		t.Fatalf("cached poster status = %d, extractor calls = %d", notModified.Code, frameExtractor.calls)
 	}
 }
 
