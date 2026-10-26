@@ -1,0 +1,554 @@
+{
+  "engine": "Installed Google Chrome / Chromium, headless Playwright",
+  "data": "Actual local media list, extracted frame JPEGs, MKV playback and bilingual cues; no mocked content in screenshots",
+  "physicalDevices": false,
+  "results": [
+    {
+      "name": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "library": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "cards": 2,
+        "images": [
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/1/poster?v=2026-09-17T12%3A50%3A55.568392%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          }
+        ],
+        "hero": {
+          "x": 244,
+          "y": 148.875,
+          "width": 1172,
+          "height": 500,
+          "top": 148.875,
+          "right": 1416,
+          "bottom": 648.875,
+          "left": 244
+        }
+      },
+      "player": {
+        "document": [
+          1440,
+          1000
+        ],
+        "video": {
+          "x": 44.1875,
+          "y": 167.5,
+          "width": 841.5625,
+          "height": 754.5,
+          "top": 167.5,
+          "right": 885.75,
+          "bottom": 922,
+          "left": 44.1875
+        },
+        "subtitles": {
+          "x": 886.75,
+          "y": 280.5,
+          "width": 509.046875,
+          "height": 698.5,
+          "top": 280.5,
+          "right": 1395.796875,
+          "bottom": 979,
+          "left": 886.75
+        },
+        "inline": true,
+        "contrast": {
+          ".player-header p": 9.132807107107178,
+          ".back-link": 10.983409454863175,
+          ".cue-en": 13.994435407971103,
+          ".cue-zh": 9.450343883354508,
+          ".subtitle-status": 8.550415781716902,
+          ".follow-button": 7.86104258519391,
+          ".cue-seek": 9.096944341568957,
+          ".track-settings summary": 9.965077633426418,
+          ".brand small": 8.617192482671651
+        }
+      },
+      "settings": {
+        "x": 894.75,
+        "y": 280.5,
+        "width": 493.046875,
+        "height": 100
+      },
+      "card": {
+        "x": 976,
+        "y": 731.71875,
+        "width": 440,
+        "height": 244.28125
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "mobile",
+      "viewport": [
+        390,
+        844
+      ],
+      "library": {
+        "width": 390,
+        "documentWidth": 390,
+        "cards": 2,
+        "images": [
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/1/poster?v=2026-09-17T12%3A50%3A55.568392%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          }
+        ],
+        "hero": {
+          "x": 24,
+          "y": 285.265625,
+          "width": 342,
+          "height": 330,
+          "top": 285.265625,
+          "right": 366,
+          "bottom": 615.265625,
+          "left": 24
+        }
+      },
+      "player": {
+        "document": [
+          390,
+          844
+        ],
+        "video": {
+          "x": 13,
+          "y": 141,
+          "width": 364,
+          "height": 204.75,
+          "top": 141,
+          "right": 377,
+          "bottom": 345.75,
+          "left": 13
+        },
+        "subtitles": {
+          "x": 13,
+          "y": 516.75,
+          "width": 364,
+          "height": 314.25,
+          "top": 516.75,
+          "right": 377,
+          "bottom": 831,
+          "left": 13
+        },
+        "inline": true,
+        "contrast": {
+          ".player-header p": 9.132807107107178,
+          ".back-link": 10.983409454863175,
+          ".cue-en": 13.994435407971103,
+          ".cue-zh": 9.450343883354508,
+          ".subtitle-status": 8.550415781716902,
+          ".follow-button": 7.86104258519391,
+          ".cue-seek": 9.096944341568957,
+          ".track-settings summary": 9.965077633426418,
+          ".brand small": 8.617192482671651
+        }
+      },
+      "settings": {
+        "x": 21,
+        "y": 516.75,
+        "width": 348,
+        "height": 100
+      },
+      "card": {
+        "x": 8,
+        "y": 574.71875,
+        "width": 374,
+        "height": 261.28125
+      },
+      "gesture": {
+        "source": "Chromium CDP synthesized touch",
+        "before": 1976,
+        "after": 2097
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "small-mobile",
+      "viewport": [
+        320,
+        568
+      ],
+      "library": {
+        "width": 320,
+        "documentWidth": 320,
+        "cards": 2,
+        "images": [
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/1/poster?v=2026-09-17T12%3A50%3A55.568392%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          }
+        ],
+        "hero": {
+          "x": 24,
+          "y": 285.265625,
+          "width": 272,
+          "height": 330,
+          "top": 285.265625,
+          "right": 296,
+          "bottom": 615.265625,
+          "left": 24
+        }
+      },
+      "player": {
+        "document": [
+          320,
+          568
+        ],
+        "video": {
+          "x": 13,
+          "y": 133,
+          "width": 294,
+          "height": 124.953125,
+          "top": 133,
+          "right": 307,
+          "bottom": 257.953125,
+          "left": 13
+        },
+        "subtitles": {
+          "x": 13,
+          "y": 428.953125,
+          "width": 294,
+          "height": 130.046875,
+          "top": 428.953125,
+          "right": 307,
+          "bottom": 559,
+          "left": 13
+        },
+        "inline": true,
+        "contrast": {
+          ".player-header p": 9.132807107107178,
+          ".back-link": 10.983409454863175,
+          ".cue-en": 13.994435407971103,
+          ".cue-zh": 9.450343883354508,
+          ".subtitle-status": 8.550415781716902,
+          ".follow-button": 7.86104258519391,
+          ".cue-seek": 9.096944341568957,
+          ".track-settings summary": 9.965077633426418,
+          ".brand small": 8.617192482671651
+        }
+      },
+      "settings": {
+        "x": 21,
+        "y": 428.953125,
+        "width": 278,
+        "height": 100
+      },
+      "card": {
+        "x": 8,
+        "y": 272.328125,
+        "width": 304,
+        "height": 287.671875
+      },
+      "gesture": {
+        "source": "Chromium CDP synthesized touch",
+        "before": 2376,
+        "after": 2441
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "tablet-portrait",
+      "viewport": [
+        768,
+        1024
+      ],
+      "library": {
+        "width": 768,
+        "documentWidth": 768,
+        "cards": 2,
+        "images": [
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/1/poster?v=2026-09-17T12%3A50%3A55.568392%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          }
+        ],
+        "hero": {
+          "x": 24,
+          "y": 201.359375,
+          "width": 720,
+          "height": 291.828125,
+          "top": 201.359375,
+          "right": 744,
+          "bottom": 493.1875,
+          "left": 24
+        }
+      },
+      "player": {
+        "document": [
+          768,
+          1024
+        ],
+        "video": {
+          "x": 13,
+          "y": 141,
+          "width": 742,
+          "height": 317.4375,
+          "top": 141,
+          "right": 755,
+          "bottom": 458.4375,
+          "left": 13
+        },
+        "subtitles": {
+          "x": 13,
+          "y": 629.4375,
+          "width": 742,
+          "height": 381.5625,
+          "top": 629.4375,
+          "right": 755,
+          "bottom": 1011,
+          "left": 13
+        },
+        "inline": true,
+        "contrast": {
+          ".player-header p": 9.132807107107178,
+          ".back-link": 10.983409454863175,
+          ".cue-en": 13.994435407971103,
+          ".cue-zh": 9.450343883354508,
+          ".subtitle-status": 8.550415781716902,
+          ".follow-button": 7.86104258519391,
+          ".cue-seek": 9.096944341568957,
+          ".track-settings summary": 9.965077633426418,
+          ".brand small": 8.617192482671651
+        }
+      },
+      "settings": {
+        "x": 21,
+        "y": 629.4375,
+        "width": 726,
+        "height": 100
+      },
+      "card": {
+        "x": 8,
+        "y": 771.71875,
+        "width": 752,
+        "height": 244.28125
+      },
+      "gesture": {
+        "source": "Chromium CDP synthesized touch",
+        "before": 1686,
+        "after": 1807
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "tablet-landscape",
+      "viewport": [
+        1024,
+        768
+      ],
+      "library": {
+        "width": 1024,
+        "documentWidth": 1024,
+        "cards": 2,
+        "images": [
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/1/poster?v=2026-09-17T12%3A50%3A55.568392%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          }
+        ],
+        "hero": {
+          "x": 24,
+          "y": 210.125,
+          "width": 976,
+          "height": 389.109375,
+          "top": 210.125,
+          "right": 1000,
+          "bottom": 599.234375,
+          "left": 24
+        }
+      },
+      "player": {
+        "document": [
+          1024,
+          768
+        ],
+        "video": {
+          "x": 31.71875,
+          "y": 166.9375,
+          "width": 598.078125,
+          "height": 523.0625,
+          "top": 166.9375,
+          "right": 629.796875,
+          "bottom": 690,
+          "left": 31.71875
+        },
+        "subtitles": {
+          "x": 630.796875,
+          "y": 279.9375,
+          "width": 361.46875,
+          "height": 467.0625,
+          "top": 279.9375,
+          "right": 992.265625,
+          "bottom": 747,
+          "left": 630.796875
+        },
+        "inline": true,
+        "contrast": {
+          ".player-header p": 9.132807107107178,
+          ".back-link": 10.983409454863175,
+          ".cue-en": 13.994435407971103,
+          ".cue-zh": 9.450343883354508,
+          ".subtitle-status": 8.550415781716902,
+          ".follow-button": 7.86104258519391,
+          ".cue-seek": 9.096944341568957,
+          ".track-settings summary": 9.965077633426418,
+          ".brand small": 8.617192482671651
+        }
+      },
+      "settings": {
+        "x": 638.796875,
+        "y": 279.9375,
+        "width": 345.46875,
+        "height": 100
+      },
+      "card": {
+        "x": 560,
+        "y": 499.71875,
+        "width": 440,
+        "height": 244.28125
+      },
+      "gesture": {
+        "source": "Chromium CDP synthesized touch",
+        "before": 1900,
+        "after": 2021
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "phone-landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "library": {
+        "width": 844,
+        "documentWidth": 844,
+        "cards": 2,
+        "images": [
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/1/poster?v=2026-09-17T12%3A50%3A55.568392%2B08%3A00",
+            "loaded": true
+          },
+          {
+            "src": "/api/v1/media/2/poster?v=2026-09-17T15%3A28%3A18.102626%2B08%3A00",
+            "loaded": true
+          }
+        ],
+        "hero": {
+          "x": 24,
+          "y": 203.078125,
+          "width": 796,
+          "height": 320.71875,
+          "top": 203.078125,
+          "right": 820,
+          "bottom": 523.796875,
+          "left": 24
+        }
+      },
+      "player": {
+        "document": [
+          844,
+          390
+        ],
+        "video": {
+          "x": 13,
+          "y": 141,
+          "width": 508,
+          "height": 179,
+          "top": 141,
+          "right": 521,
+          "bottom": 320,
+          "left": 13
+        },
+        "subtitles": {
+          "x": 522,
+          "y": 254,
+          "width": 309,
+          "height": 123,
+          "top": 254,
+          "right": 831,
+          "bottom": 377,
+          "left": 522
+        },
+        "inline": true,
+        "contrast": {
+          ".player-header p": 9.132807107107178,
+          ".back-link": 10.983409454863175,
+          ".cue-en": 13.994435407971103,
+          ".cue-zh": 9.450343883354508,
+          ".subtitle-status": 8.550415781716902,
+          ".follow-button": 7.86104258519391,
+          ".cue-seek": 9.096944341568957,
+          ".track-settings summary": 9.965077633426418,
+          ".brand small": 8.617192482671651
+        }
+      },
+      "settings": {
+        "x": 530,
+        "y": 254,
+        "width": 293,
+        "height": 100
+      },
+      "card": {
+        "x": 380,
+        "y": 121.71875,
+        "width": 440,
+        "height": 244.28125
+      },
+      "gesture": {
+        "source": "Chromium CDP synthesized touch",
+        "before": 2281,
+        "after": 2344
+      },
+      "pageErrors": []
+    }
+  ]
+}

@@ -9,3 +9,10 @@ frontend/dist/
 backend/server
 coverage.out
 
+# Local tool state; reviewed QA evidence is archived under docs/qa/.
+/.codex/artifacts/
+/.impeccable/questions/
+/.impeccable/review/
+/frontend/.impeccable/live/
+/docs/project-wiki/99-inbox/
+

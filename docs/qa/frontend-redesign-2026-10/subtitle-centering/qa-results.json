@@ -1,0 +1,632 @@
+{
+  "engine": "Installed Google Chrome via Playwright, headless",
+  "fixture": "Real media 2, 447 bilingual cues from local backend",
+  "physicalDevices": false,
+  "results": [
+    {
+      "name": "desktop",
+      "samples": [
+        {
+          "label": "first",
+          "index": 0,
+          "delta": 0,
+          "rowHeight": 98,
+          "listHeight": 699,
+          "scrollTop": 57,
+          "document": [
+            1440,
+            1000
+          ],
+          "viewport": [
+            1440,
+            1000
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "next-already-visible",
+          "index": 1,
+          "delta": 1,
+          "rowHeight": 126,
+          "listHeight": 699,
+          "scrollTop": 168,
+          "document": [
+            1440,
+            1000
+          ],
+          "viewport": [
+            1440,
+            1000
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "reported-cue",
+          "index": 41,
+          "delta": 0.578125,
+          "rowHeight": 98,
+          "listHeight": 699,
+          "scrollTop": 4056,
+          "document": [
+            1440,
+            1000
+          ],
+          "viewport": [
+            1440,
+            1000
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "last",
+          "index": 446,
+          "delta": 0.046875,
+          "rowHeight": 66,
+          "listHeight": 699,
+          "scrollTop": 43376,
+          "document": [
+            1440,
+            1000
+          ],
+          "viewport": [
+            1440,
+            1000
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "before-resize",
+          "index": 41,
+          "delta": 0.421875,
+          "rowHeight": 98,
+          "listHeight": 699,
+          "scrollTop": 4057,
+          "document": [
+            1440,
+            1000
+          ],
+          "viewport": [
+            1440,
+            1000
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "same-cue-after-resize",
+          "index": 41,
+          "delta": 0.421875,
+          "rowHeight": 98,
+          "listHeight": 609,
+          "scrollTop": 4057,
+          "document": [
+            1440,
+            910
+          ],
+          "viewport": [
+            1440,
+            910
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "resume",
+          "index": 42,
+          "delta": 0.578125,
+          "rowHeight": 98,
+          "listHeight": 699,
+          "scrollTop": 4154,
+          "document": [
+            1440,
+            1000
+          ],
+          "viewport": [
+            1440,
+            1000
+          ],
+          "windowScroll": 0
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "phone",
+      "samples": [
+        {
+          "label": "first",
+          "index": 0,
+          "delta": 0,
+          "rowHeight": 114,
+          "listHeight": 314,
+          "scrollTop": 65,
+          "document": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "next-already-visible",
+          "index": 1,
+          "delta": 0,
+          "rowHeight": 158,
+          "listHeight": 314,
+          "scrollTop": 201,
+          "document": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "reported-cue",
+          "index": 41,
+          "delta": 0.484375,
+          "rowHeight": 121.1875,
+          "listHeight": 314,
+          "scrollTop": 5154,
+          "document": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "last",
+          "index": 446,
+          "delta": 0.234375,
+          "rowHeight": 66,
+          "listHeight": 314,
+          "scrollTop": 55874,
+          "document": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "before-resize",
+          "index": 41,
+          "delta": 0.484375,
+          "rowHeight": 121.1875,
+          "listHeight": 314,
+          "scrollTop": 5154,
+          "document": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "same-cue-after-resize",
+          "index": 41,
+          "delta": 0.484375,
+          "rowHeight": 121.1875,
+          "listHeight": 314,
+          "scrollTop": 5154,
+          "document": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            754
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "resume",
+          "index": 42,
+          "delta": 0.078125,
+          "rowHeight": 158,
+          "listHeight": 314,
+          "scrollTop": 5294,
+          "document": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "windowScroll": 0
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "phone-landscape",
+      "samples": [
+        {
+          "label": "first",
+          "index": 0,
+          "delta": 0.5,
+          "rowHeight": 140.390625,
+          "listHeight": 123,
+          "scrollTop": 70,
+          "document": [
+            844,
+            390
+          ],
+          "viewport": [
+            844,
+            390
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "next-already-visible",
+          "index": 1,
+          "delta": 0.109375,
+          "rowHeight": 209.1875,
+          "listHeight": 123,
+          "scrollTop": 210,
+          "document": [
+            844,
+            390
+          ],
+          "viewport": [
+            844,
+            390
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "reported-cue",
+          "index": 41,
+          "delta": 0.453125,
+          "rowHeight": 165.1875,
+          "listHeight": 123,
+          "scrollTop": 5674,
+          "document": [
+            844,
+            390
+          ],
+          "viewport": [
+            844,
+            390
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "last",
+          "index": 446,
+          "delta": 0.34375,
+          "rowHeight": 66,
+          "listHeight": 123,
+          "scrollTop": 61201,
+          "document": [
+            844,
+            390
+          ],
+          "viewport": [
+            844,
+            390
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "before-resize",
+          "index": 41,
+          "delta": 0.453125,
+          "rowHeight": 165.1875,
+          "listHeight": 123,
+          "scrollTop": 5674,
+          "document": [
+            844,
+            390
+          ],
+          "viewport": [
+            844,
+            390
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "same-cue-after-resize",
+          "index": 41,
+          "delta": 0.453125,
+          "rowHeight": 165.1875,
+          "listHeight": 123,
+          "scrollTop": 5674,
+          "document": [
+            844,
+            390
+          ],
+          "viewport": [
+            844,
+            300
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "resume",
+          "index": 42,
+          "delta": 0.359375,
+          "rowHeight": 158,
+          "listHeight": 123,
+          "scrollTop": 5840,
+          "document": [
+            844,
+            390
+          ],
+          "viewport": [
+            844,
+            390
+          ],
+          "windowScroll": 0
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "tablet-portrait",
+      "samples": [
+        {
+          "label": "first",
+          "index": 0,
+          "delta": 0,
+          "rowHeight": 114,
+          "listHeight": 382,
+          "scrollTop": 65,
+          "document": [
+            768,
+            1024
+          ],
+          "viewport": [
+            768,
+            1024
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "next-already-visible",
+          "index": 1,
+          "delta": 0,
+          "rowHeight": 114,
+          "listHeight": 382,
+          "scrollTop": 179,
+          "document": [
+            768,
+            1024
+          ],
+          "viewport": [
+            768,
+            1024
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "reported-cue",
+          "index": 41,
+          "delta": 0,
+          "rowHeight": 114,
+          "listHeight": 382,
+          "scrollTop": 4451,
+          "document": [
+            768,
+            1024
+          ],
+          "viewport": [
+            768,
+            1024
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "last",
+          "index": 446,
+          "delta": 0,
+          "rowHeight": 66,
+          "listHeight": 382,
+          "scrollTop": 48149,
+          "document": [
+            768,
+            1024
+          ],
+          "viewport": [
+            768,
+            1024
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "before-resize",
+          "index": 41,
+          "delta": 0,
+          "rowHeight": 114,
+          "listHeight": 382,
+          "scrollTop": 4451,
+          "document": [
+            768,
+            1024
+          ],
+          "viewport": [
+            768,
+            1024
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "same-cue-after-resize",
+          "index": 41,
+          "delta": 0,
+          "rowHeight": 114,
+          "listHeight": 382,
+          "scrollTop": 4451,
+          "document": [
+            768,
+            1024
+          ],
+          "viewport": [
+            768,
+            934
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "resume",
+          "index": 42,
+          "delta": 0,
+          "rowHeight": 114,
+          "listHeight": 382,
+          "scrollTop": 4565,
+          "document": [
+            768,
+            1024
+          ],
+          "viewport": [
+            768,
+            1024
+          ],
+          "windowScroll": 0
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "tablet-landscape",
+      "samples": [
+        {
+          "label": "first",
+          "index": 0,
+          "delta": 0,
+          "rowHeight": 114,
+          "listHeight": 467,
+          "scrollTop": 65,
+          "document": [
+            1024,
+            768
+          ],
+          "viewport": [
+            1024,
+            768
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "next-already-visible",
+          "index": 1,
+          "delta": 0,
+          "rowHeight": 158,
+          "listHeight": 467,
+          "scrollTop": 201,
+          "document": [
+            1024,
+            768
+          ],
+          "viewport": [
+            1024,
+            768
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "reported-cue",
+          "index": 41,
+          "delta": 0.09375,
+          "rowHeight": 121.1875,
+          "listHeight": 467,
+          "scrollTop": 5172,
+          "document": [
+            1024,
+            768
+          ],
+          "viewport": [
+            1024,
+            768
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "last",
+          "index": 446,
+          "delta": 0.453125,
+          "rowHeight": 66,
+          "listHeight": 467,
+          "scrollTop": 56041,
+          "document": [
+            1024,
+            768
+          ],
+          "viewport": [
+            1024,
+            768
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "before-resize",
+          "index": 41,
+          "delta": 0.09375,
+          "rowHeight": 121.1875,
+          "listHeight": 467,
+          "scrollTop": 5172,
+          "document": [
+            1024,
+            768
+          ],
+          "viewport": [
+            1024,
+            768
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "same-cue-after-resize",
+          "index": 41,
+          "delta": 0.09375,
+          "rowHeight": 121.1875,
+          "listHeight": 467,
+          "scrollTop": 5172,
+          "document": [
+            1024,
+            768
+          ],
+          "viewport": [
+            1024,
+            678
+          ],
+          "windowScroll": 0
+        },
+        {
+          "label": "resume",
+          "index": 42,
+          "delta": 0.3125,
+          "rowHeight": 158,
+          "listHeight": 467,
+          "scrollTop": 5312,
+          "document": [
+            1024,
+            768
+          ],
+          "viewport": [
+            1024,
+            768
+          ],
+          "windowScroll": 0
+        }
+      ],
+      "pageErrors": []
+    }
+  ]
+}

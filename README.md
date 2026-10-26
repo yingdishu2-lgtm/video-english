@@ -97,3 +97,5 @@ make build
 ```
 
 后端测试覆盖扫描、播放决策、HTTP Range、双语对齐和音标缓存；前端测试覆盖播放器状态、英文词元切分与 ARPABET → IPA 转换，构建命令同时执行 TypeScript 检查。
+
+2026 年 10 月前端重做与字幕居中跟随的历史截图、视口测量和验证边界见[界面验收资料](./docs/qa/frontend-redesign-2026-10/README.md)。

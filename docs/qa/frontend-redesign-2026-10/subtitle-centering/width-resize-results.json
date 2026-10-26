@@ -1,0 +1,18 @@
+{
+  "engine": "Installed Chrome, headless Playwright",
+  "before": {
+    "delta": 0.421875,
+    "rowHeight": 66,
+    "listWidth": 509,
+    "listHeight": 699,
+    "time": 128.5
+  },
+  "after": {
+    "delta": 0.671875,
+    "rowHeight": 66,
+    "listWidth": 418,
+    "listHeight": 699,
+    "time": 128.5
+  },
+  "passed": true
+}
